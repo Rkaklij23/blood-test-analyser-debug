@@ -41,6 +41,7 @@ uvicorn main:app --reload
 
 ## API Documentation
 GET /
+
 Health check endpoint
 Returns:
 ```json
@@ -48,6 +49,7 @@ Returns:
 ```
 
 POST /analyze
+
 Analyzes a blood test PDF with the help of 4 CrewAI agents.
 
 Form Data Parameters:
