@@ -25,19 +25,19 @@ pip install -r requirement.txt
 ```bash
 git clone https://github.com/your-username/blood-test-analyser-debug.git
 cd blood-test-analyser-debug
-
-
+```
 
 ## Setup Environment Variables
 ### Create a .env file in the root directory with your OpenAI key:
 ```ini
 OPENAI_API_KEY=your_openai_api_key_here
+```
 
 ## Usage Instruction
-### Run the FastAPI Server
+### Run the FastAPI Server  
 ```bash
 uvicorn main:app --reload
-
+```
 
 ## API Documentation
 GET /
@@ -45,7 +45,7 @@ Health check endpoint
 Returns:
 ```json
 { "message": "Blood Test Report Analyser API is running" }
-
+```
 
 POST /analyze
 Analyzes a blood test PDF with the help of 4 CrewAI agents.
@@ -55,3 +55,6 @@ Form Data Parameters:
 file: PDF file (required)
 
 query: Optional text prompt (default: "Summarise my Blood Test Report")
+
+
+
